@@ -1,0 +1,91 @@
+/* Reset Code */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(160deg, rgb(32, 38, 57) 11.4%, rgb(18 21 31) 70.2%);
+    color: white;
+}
+
+header,
+main,
+main .left,
+footer .primary {
+    display: flex;
+}
+
+/* 
+    MARK: Header
+*/
+header {
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+}
+
+header .icon {
+    height: 12px;
+    width: 12px;
+}
+
+/* 
+    MARK: Main
+*/
+main {
+    min-height: 90vh;
+}
+
+main,
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main .icon {
+    height: 20px;
+}
+
+main .left {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    align-self: center;
+
+}
+
+.left h1 {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.gradient {
+    background: radial-gradient(circle at top left, #099ef1 0%, #6863f8 18.82%, #d84ffa 32.6%, #f058c5 52.83%, #ff4f90 68.03%, #ff6558 87.66%, #ff891f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.right video {
+    width: 70%;
+}
+
+/* 
+    MARK: Footer
+*/
+footer .primary {
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+}
+
+footer .icon {
+    height: 16px;
+}
